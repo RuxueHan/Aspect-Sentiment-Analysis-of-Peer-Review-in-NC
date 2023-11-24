@@ -16,7 +16,6 @@ During the labeling process, the sentiments of the aspect words contained in eac
 ### 3.1 Judgment standard of neutral aspect sentiment
 (1) A direct description of the dissertation work, where the modifiers involved are neutral.<br/>
 Eg: This manuscript describes a study on the development of a conditional Por-KO, liver humanized chimeric mouse ***model*** and its ***utility*** for the assessment of drug metabolism.<br/>
-(Note: The words marked in the review sentence are aspects, the same below.)<br/>
 (2) The modifiers for aspects are neutral, such as other, many, some, proposed, etc. <br/>
 Eg: The authors mention that mutations in pik3ca and tp53 are mutually exclusive in breast cancer; but did not indicate if the analysis showed significance in other/all cancer ***types***. <br/>
 (3) Aspects that are only mentioned but not evaluated in the sentence are neutral, and the components of the sentence are neutral<br/>
@@ -27,18 +26,18 @@ Eg: The ***re-referencing*** of previous figures out of order is confusing.<br/>
 (2) The aspect word itself has negative emotions<br/>
 Eg: There is a ***typo*** in expression 2 in fig s1.<br/> 
 (3) Sentences containing questions from reviewers about some aspect of the paper<br/>
-Eg: Do you mean the ***average*** of all hindcast available at that year? (4) Reviewers use derogatory terms to express their mood or emotions about an aspect<br/>  
-Eg: I'm not sure what these discrepancy values ***mean***.<br/> 
+Eg: Do you mean the ***average*** of all hindcast available at that year?<br/> 
+(4) Reviewers use derogatory terms to express their mood or emotions about an aspect <br/>  Eg: I'm not sure what these discrepancy values ***mean***. <br/> 
 (5) Include the reviewer's expectations regarding a particular aspect of the paper, suggesting improvements for enhancement, or pointing out the issues the author hasn't addressed yet. If the reviewer believes that addressing these issues would lead to improvement, the sentiment associated with this aspect is considered negative.<br/>
 Eg: The inset ***plot*** would benefit greatly from more explanation.<br/>
 Eg: These are interesting areas for future research, so i hope you can address my concerns above so that ***discussion*** on these important issues can progress.<br/> 
-(6) Suggestions or requirements for a certain aspect of the article, such as: the sentence contains the words need, must, please, etc.<br/>  
-Eg: There are several ***aspects*** of the current manuscript that were distracting and need to be addressed.<br/>  
+(6) Suggestions or requirements for a certain aspect of the article, such as: the sentence contains the words need, must, please, etc.<br/> 
+Eg: There are several ***aspects*** of the current manuscript that were distracting and need to be addressed.<br/> 
 (7) There is a transition word before the clause where the aspect is located, and the previous sentence is a positive emotion<br/>
 Eg: The ***model*** is well described but the authors should pay more effort to walk through the reader of the dynamic development how the ***structure*** evolves towards the presented ***outcome***.<br/>
 ### 3.3 Judgment standard of positive aspect sentiment
 (1) Sentiment words that modify aspects are positive words<br/> 
-Eg：I agree with the authors that this is a very important new set of vapour ***observations*** that allows new ***insights*** into key isotopic processes.<br/>  
+Eg：I agree with the authors that this is a very important new set of vapour ***observations*** that allows new ***insights*** into key isotopic processes.<br/>
 (2) The aspect word itself has a positive sentiment<br/>
 Eg：There are several ***findings*** and ***contributions*** reported in this paper.<br/>
 (3) Reviewers use compliments when expressing their mood or emotions about aspects<br/>
@@ -49,9 +48,9 @@ Eg：They achieved interesting ***performance*** levels (projected retention tim
 Eg：My personal sense is that this is still mostly a strawman argument, but i appreciate the ***effort*** that the authors have done to address it.<br/> 
 (6) Although some emotional words do not appear together with aspect words, they also express emotional expressions for a certain aspect (syntax relation xcomp). The common ones are:<br/> 
 clearly：‘clarity’ +1;<br/>
-well described 描述的好：‘description’ +1<br/>
-well written 写得好 writing+1<br/>    
-easy read ,easy follow, easy understand容易读：‘readability’+1;<br/>
+well described：‘description’ +1<br/>
+well written: writing+1<br/>    
+easy read ,easy follow, easy understand：‘readability’+1;<br/>
 ### 3.4 Judgment Standard of Modal Verb
 (1) Can / could: expressing the ability to accomplish something, positive sentiment<br/>
 (2) Can / could +Comparatives: negative sentiment<br/>
