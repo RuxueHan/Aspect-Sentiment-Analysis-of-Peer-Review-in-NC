@@ -16,6 +16,7 @@ During the labeling process, the sentiments of the aspect words contained in eac
 ### 3.1 Judgment standard of neutral aspect sentiment
 (1) A direct description of the dissertation work, where the modifiers involved are neutral.<br/>
 Eg: This manuscript describes a study on the development of a conditional Por-KO, liver humanized chimeric mouse ***model*** and its ***utility*** for the assessment of drug metabolism.<br/>
+(Note: Words marked in italics in the review sentence are attributes, as the same below.)<br/>
 (2) The modifiers for aspects are neutral, such as other, many, some, proposed, etc. <br/>
 Eg: The authors mention that mutations in pik3ca and tp53 are mutually exclusive in breast cancer; but did not indicate if the analysis showed significance in other/all cancer ***types***. <br/>
 (3) Aspects that are only mentioned but not evaluated in the sentence are neutral, and the components of the sentence are neutral<br/>
