@@ -27,17 +27,18 @@ Aspect-Sentiment-Analysis-of-Peer-Review-in-NC            Root directory
 </pre>
 
 ## Dataset Discription
-We release our self-annotated dataset in *Dataset* directory, it contains 5,063 review sentences with annotated aspect sentiments, including 1,498 positive, 1,652 neutral and 1,913 negative aspect sentiment sentences respectively.
+- <code>./Dataset/Review_Aspect_Clusters.xlsx</code> Aspect Clusters of Peer Review Comments, it contains 370 review aspect words categorized into 11 clusters.
+- <code>./Dataset/Annotated_Corpus.xlsx</code> Our self-annotated dataset, it contains 5,063 review sentences with annotated aspect sentiments, including 1,498 positive, 1,652 neutral and 1,913 negative aspect sentiment sentences respectively.
+  <b>Each line of Annotated_Corpus includes: </b>
+  <li>URL: URL of peer review file in Nature Communications.    
+  <li>DOI: DOI of Paper in Nature Communications.
+  <li>Sentiment calculated by machine rules: Sentiments in review sentences calculated by machine rules.
+  <li>Opinion words: Opinion words in sentences of review comments.
+  <li>Syntactic relationship: Syntactic relations between aspect words and opinion words in review sentences.
+  <li>Label polarity: '1' (positive), '-1' (negative), '0' (neutral)
+  <li>Aspect words: Aspect words in sentences of review comments.
+  <li>Review sentence: Peer review sentence text
+- <code>./Dataset/nc_train_data.xlsx</code> Traning dataset for classification of aspect sentiment in review comment, it contains 4,050 records from <b>Annotated_Corpus.xlsx</b>.
+- <code>./Dataset/nc_test_data.xlsx</code> Testing dataset for classification of aspect sentiment in review comment, it contains 1,013 records from <b>Annotated_Corpus.xlsx</b>.
 
-<li><b>nc_train_data.xlsx</b>: Traning dataset for classification of aspect sentiment in review comment, it contains 4,050 records from <b>Annotated_Corpus.xlsx</b>.
-<li><b>nc_test_data.xlsx</b>: Testing dataset for classification of aspect sentiment in review comment, it contains 1,013 records from <b>Annotated_Corpus.xlsx</b>.
 
-<b>Each line of Annotated_Corpus includes: </b>
-<li>URL: URL of peer review file in Nature Communications.    
-<li>DOI: DOI of Paper in Nature Communications.
-<li>Sentiment calculated by machine rules: Sentiments in review sentences calculated by machine rules.
-<li>Opinion words: Opinion words in sentences of review comments.
-<li>Syntactic relationship: Syntactic relations between aspect words and opinion words in review sentences.
-<li>Label polarity: '1' (positive), '-1' (negative), '0' (neutral)
-<li>Aspect words: Aspect words in sentences of review comments.
-<li>Review sentence: Peer review sentence text
