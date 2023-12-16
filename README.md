@@ -41,4 +41,5 @@ Aspect-Sentiment-Analysis-of-Peer-Review-in-NC            Root directory
 - <code>./Dataset/nc_train_data.xlsx</code> Traning dataset for classification of aspect sentiment in review comment, it contains 4,050 records from Annotated_Corpus.xlsx.
 - <code>./Dataset/nc_test_data.xlsx</code> Testing dataset for classification of aspect sentiment in review comment, it contains 1,013 records from Annotated_Corpus.xlsx.
 
-
+## Quick Start
+- <code>python ./Code/Round_Split.py</code> Execute this to segment and save peer review documents in Nature Communications based on the review rounds
