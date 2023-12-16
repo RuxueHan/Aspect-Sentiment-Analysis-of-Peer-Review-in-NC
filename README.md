@@ -42,7 +42,8 @@ Aspect-Sentiment-Analysis-of-Peer-Review-in-NC            Root directory
 - <code>./Dataset/nc_test_data.xlsx</code> Testing dataset for classification of aspect sentiment in review comment, it contains 1,013 records from Annotated_Corpus.xlsx.
 
 ## Quick Start
-- <code>python ./Code/Round_Split.py</code> Execute this to segment and save peer review documents in Nature Communications based on the review rounds.
+- <code>python ./Code/Round_Split.py</code> Execute this to segment and save peer review files in Nature Communications based on the review rounds.
 - <code>python ./Code/Review_Sentence.py</code> Execute this to extracting review sentences containing comments on review aspects.
 - <b>Automatic classification of aspect sentiment in review comments</b>
+We train 12 deep learning-based aspect sentiment classification models, among these LSTM, TD-LSTM, TC-LSTM, ATAE-LSTM, MEMNET, IAN, AOA, BERT-SPC, AEN-BERT, LCF-BERT models are constructed using the open source code released by songyouwei et al.[ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch), LCFS-BERT model is constructed using the open source code released by Phan et al.[LCFS-BERT](https://github.com/HieuPhan33/LCFS-BERT), aspect sentiment classification model based on FT-RoBERTa is constructed using the open source code released by Dai et al.[RoBERTaABSA](https://github.com/ROGERDJQ/RoBERTaABSA).
 
