@@ -14,7 +14,7 @@ The main research contents include three parts:
 Aspect-Sentiment-Analysis-of-Peer-Review-in-NC            Root directory
 ├── Code                                                  Source code folder
 │   ├── Round_Split.py                                    Source code for review rounds segmentation
-│   ├── Review_Sentence .py                               Source code for extracting sentences containing comments on aspects
+│   ├── Review_Sentence.py                                Source code for extracting sentences containing comments on aspects
 │   ├── Model_Input_Data_Preprocessing.ipynb              Source code for preprocessing of data input to the model
 │   └── Aspect_Sentiment_Score.py                         Source code for calculating aspect sentiment score
 ├── Dataset                                               Dataset folder
@@ -42,4 +42,7 @@ Aspect-Sentiment-Analysis-of-Peer-Review-in-NC            Root directory
 - <code>./Dataset/nc_test_data.xlsx</code> Testing dataset for classification of aspect sentiment in review comment, it contains 1,013 records from Annotated_Corpus.xlsx.
 
 ## Quick Start
-- <code>python ./Code/Round_Split.py</code> Execute this to segment and save peer review documents in Nature Communications based on the review rounds
+- <code>python ./Code/Round_Split.py</code> Execute this to segment and save peer review documents in Nature Communications based on the review rounds.
+- <code>python ./Code/Review_Sentence.py</code> Execute this to extracting review sentences containing comments on review aspects.
+- <b>Automatic classification of aspect sentiment in review comments</b>
+
