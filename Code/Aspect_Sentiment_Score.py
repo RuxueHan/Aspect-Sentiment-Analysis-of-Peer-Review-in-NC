@@ -16,16 +16,16 @@ def walkFile(root_path):
     return files_list, dir_list
 
 
-def read_xlsx(xlsx_path, i):  # 读取同行评审句数据表，获得评审标签
+def read_xlsx(xlsx_path, i):  
     data = []
     data_xsls = xlrd.open_workbook(xlsx_path)
     sheet_name = data_xsls.sheets()[i]
-    sentiments = sheet_name.col_values(0)[0:]  # 情感极性
-    aspects = sheet_name.col_values(3)[0:]  # 属性词
+    sentiments = sheet_name.col_values(0)[0:]  # sentiment polarity
+    aspects = sheet_name.col_values(3)[0:]  # Aspect
     return sentiments, aspects
 
 
-def aspect_word(path):  # 读取各属性类
+def aspect_word(path): 
     data_xlsx = xlrd.open_workbook(path)
     sheet_name = data_xlsx.sheets()[0]
     count_nrows = sheet_name.nrows
@@ -45,23 +45,23 @@ def sentiment_score(score_dic, frequency_dic, classname, classaspects, sentiment
         m = 0
         while m < 11:
             if lemmatizer.lemmatize(aspects[i]) in classaspects[m]:
-                score_dic[classname[m]] += int(sentiments[i])  # 该属性类下的属性词情感及极性累加
+                score_dic[classname[m]] += int(sentiments[i])  
             if lemmatizer.lemmatize(aspects[i]) in classaspects[m]:
-                frequency_dic[classname[m]] += 1  # 该属性类下的属性词正、中、负情感极性频次累加
+                frequency_dic[classname[m]] += 1 
             m += 1
 
     return score_dic, frequency_dic
 
 
 if __name__ == '__main__':
-    root_path = r'E:\毕业论文\韩茹雪-毕业论文数据\part_2 多轮同行评审意见的属性情感自动分类\ncomms pr txt round\Round=6'
+    root_path = r'./ncomms pr txt round/Round=6'
     files_list, dir_list = walkFile(root_path)
     files_list = [path for path in files_list if
                   'Round' in os.path.basename(path) and '.xlsx' in os.path.basename(path)]
-    write_path = 'C:/Users/Han Ruxue/Desktop/score6.txt'
+    write_path = 'score6.txt'
     print(len(files_list))
 
-    aspect = aspect_word('E:/科研训练/aspect-test/Aspect-cluster.xlsx')
+    aspect = aspect_word('./Dataset/Review_Aspect_Clusters.xlsx')
     classname = list(aspect.keys())
     classaspects = list(aspect.values())
 
@@ -69,14 +69,14 @@ if __name__ == '__main__':
     for a in classname:
         class_list = class_list + str(a) + '\t'
     with open(write_path, 'a+') as f:
-        f.write('Paper_ID' + '\t' + '评审总轮数' + '\t' + class_list + '\n')
+        f.write('Paper_ID' + '\t' + 'review rounds' + '\t' + class_list + '\n')
     f.close()
 
     for i in range(0, len(files_list), 6):
         score_dic = {}
         frequency_dic = {}
         for m in classname:
-            score_dic[m] = 0  # 初始值为0
+            score_dic[m] = 0  
             frequency_dic[m] = 0
 
         total_sentiments = []
@@ -85,8 +85,7 @@ if __name__ == '__main__':
             sentiments, aspects = read_xlsx(files_list[i + n], 0)
             total_sentiments += sentiments
             total_aspects += aspects
-        score_dic, frequency_dic = sentiment_score(score_dic, frequency_dic, classname, classaspects, total_sentiments,
-                                                   total_aspects)
+        score_dic, frequency_dic = sentiment_score(score_dic, frequency_dic, classname, classaspects, total_sentiments, total_aspects)
 
         for key, value in score_dic.items():
             if value != 0:
