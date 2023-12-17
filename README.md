@@ -47,3 +47,9 @@ Aspect-Sentiment-Analysis-of-Peer-Review-in-NC            Root directory
 - Automatic classification of aspect sentiment in review comments:<br/>
 We train 12 deep learning-based aspect sentiment classification models, among these LSTM, TD-LSTM, TC-LSTM, ATAE-LSTM, MEMNET, IAN, AOA, BERT-SPC, AEN-BERT, LCF-BERT models are constructed using the open source code released by songyouwei et al.[[ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch)], LCFS-BERT model is constructed using the open source code released by Phan et al.[[LCFS-BERT](https://github.com/HieuPhan33/LCFS-BERT)], aspect sentiment classification model based on FT-RoBERTa is constructed using the open source code released by Dai et al.[[RoBERTaABSA](https://github.com/ROGERDJQ/RoBERTaABSA)]. Then,we evaluate this models on our annotated dataset, the performance-optimal model LCF-BERT-CDM is applied for the automatic classification of unannotated aspect sentiment corpora.
 - <code>python ./Code/Aspect_Sentiment_Score.py</code> Execute this to calculate aspect sentiment score of review comments.
+
+## Citation
+Please cite the following paper if you use this code and dataset in your work.
+    
+> Aspect-Based Sentiment Evolution and its Correlation with Review Rounds in Multi-Round Peer Reviews: A Deep Learning Approach. ***Journal of Informetrics***, 2024, (submitted). [[doi]]() [[Dataset & Source Code]](https://github.com/RuxueHan/Aspect-Sentiment-Analysis-of-Peer-Review-in-NC)
+
