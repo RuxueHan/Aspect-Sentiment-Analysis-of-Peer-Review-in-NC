@@ -54,5 +54,5 @@ Then, we evaluate this models on our annotated dataset, the performance-optimal 
 ## Citation
 Please cite the following paper if you use this code and dataset in your work.
     
-> Aspect-Based Sentiment Evolution and its Correlation with Review Rounds in Multi-Round Peer Reviews: A Deep Learning Approach. ***Journal of Informetrics***, 2024, (submitted). [[doi]]() [[Dataset & Source Code]](https://github.com/RuxueHan/Aspect-Sentiment-Analysis-of-Peer-Review-in-NC)
+> Aspect-Based Sentiment Evolution and its Correlation with Review Rounds in Multi-Round Peer Reviews: A Deep Learning Approach. ***Data and Information Management***, 2024, (submitted). [[doi]]() [[Dataset & Source Code]](https://github.com/RuxueHan/Aspect-Sentiment-Analysis-of-Peer-Review-in-NC)
 
